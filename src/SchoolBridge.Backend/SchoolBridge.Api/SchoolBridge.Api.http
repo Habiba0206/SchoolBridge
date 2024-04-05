@@ -1,0 +1,6 @@
+@SchoolBridge.Api_HostAddress = http://localhost:5282
+
+GET {{SchoolBridge.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
