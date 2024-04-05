@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace SchoolBridge.Domain.Common.Caching;
 
-namespace SchoolBridge.Domain.Common.Caching
+/// <summary>
+/// Represents an abstract base class for cache models, providing a common interface for caching operations.
+/// </summary>
+public abstract class CacheModel
 {
-    internal class CacheModel
-    {
-    }
+    /// <summary>
+    /// Gets the unique cache key associated with cache model. 
+    /// </summary>
+    public abstract string CacheKey { get; }
 }
