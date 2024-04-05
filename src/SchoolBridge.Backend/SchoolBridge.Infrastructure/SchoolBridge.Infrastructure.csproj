@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SchoolBridge.Application\SchoolBridge.Application.csproj" />
     <ProjectReference Include="..\SchoolBridge.Persistence\SchoolBridge.Persistence.csproj" />
   </ItemGroup>

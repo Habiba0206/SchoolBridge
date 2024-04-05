@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
-namespace SchoolBridge.Domain.Common.Commands
+namespace SchoolBridge.Domain.Common.Commands;
+
+/// <summary>
+/// Represents a command in a CQRS (Command Query Responsibility Segregation) architecture.
+/// </summary>
+/// <typeparam name="TResult"> the type of result produced by executing the command. </typeparam>
+public interface ICommand<out TResult> : ICommand, IRequest<TResult> 
 {
-    internal interface ICommand
-    {
-    }
+
+}
+
+/// <summary>
+/// Defines interface for commands
+/// </summary>
+public interface ICommand
+{
 }

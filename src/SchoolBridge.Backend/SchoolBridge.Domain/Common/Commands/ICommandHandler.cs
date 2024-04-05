@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
-namespace SchoolBridge.Domain.Common.Commands
+namespace SchoolBridge.Domain.Common.Commands;
+
+/// <summary>
+/// Represents a handler for a specific command type, responsible for processing the command and producing a result.
+/// </summary>
+/// <typeparam name="TCommand"> The type of command being handled. </typeparam>
+/// <typeparam name="TResult"> The type of result producing by handling the command. </typeparam>
+public interface ICommandHandler<in TCommand, TResult> : IRequestHandler<TCommand, TResult> where TCommand: ICommand<TResult>
 {
-    internal interface ICommandHandler
-    {
-    }
+
 }
