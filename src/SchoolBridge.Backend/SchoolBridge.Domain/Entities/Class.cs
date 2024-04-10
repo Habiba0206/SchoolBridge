@@ -30,5 +30,10 @@ public class Class : AuditableEntity
     /// <summary>
     /// Navigation property that stores Teacher user related to this Class.
     /// </summary>
-    public User Teacher { get; set; }
+    public Teacher HeadTeacher { get; set; }
+
+    /// <summary>
+    /// Gets or sets the collection of the students related to this school.
+    /// </summary>
+    public IEnumerable<Student> Students { get; set; }
 }
