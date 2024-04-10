@@ -21,7 +21,7 @@ public class TeacherSubject : AuditableEntity
     /// <summary>
     /// Gets or sets associated Teacher with this entity.
     /// </summary>
-    public User Teacher { get; set; }
+    public Teacher Teacher { get; set; }
 
     /// <summary>
     /// Gets or sets associated Subject with this entity.
