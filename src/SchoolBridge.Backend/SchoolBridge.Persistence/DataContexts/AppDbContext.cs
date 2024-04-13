@@ -7,6 +7,10 @@ public class AppDbContext(DbContextOptions<AppDbContext> dbContextOptions) : DbC
 {
     #region School things
     
+    public DbSet<Teacher> Teachers => Set<Teacher>();
+
+    public DbSet<Student> Students => Set<Student>();
+
     public DbSet<School> Schools => Set<School>();
 
     public DbSet<Class> Classes => Set<Class>();
