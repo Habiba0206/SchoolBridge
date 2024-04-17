@@ -11,5 +11,5 @@ public class SchoolGetQuery : IQuery<ICollection<SchoolDto>>
     /// <summary>
     /// The filter pagination to retrieve the collection of school entities.
     /// </summary>
-    public SchoolFilter SchoolFilter { get; set; }
+    public StudentFilter SchoolFilter { get; set; }
 }

@@ -6,7 +6,7 @@ namespace SchoolBridge.Application.Schools.Commands;
 /// <summary>
 /// Represents a command to create a new school.
 /// </summary>
-public class SchoolCreateCommand : ICommand<SchoolDto>
+public class SchoolCreateCommand : ICommand<StudentDto>
 {
     /// <summary>
     /// The data required to create a new school.
