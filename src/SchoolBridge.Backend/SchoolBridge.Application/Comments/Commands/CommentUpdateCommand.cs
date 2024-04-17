@@ -6,7 +6,7 @@ namespace SchoolBridge.Application.Comments.Commands;
 /// <summary>
 /// Represents a command to modify an existing comment.
 /// </summary>
-public record CommentUpdateCommend : ICommand<CommentDto>
+public record CommentUpdateCommand : ICommand<CommentDto>
 {
     /// <summary>
     /// The data required to update an existing comment.
