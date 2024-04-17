@@ -5,7 +5,7 @@ namespace SchoolBridge.Application.Comments.Commands;
 /// <summary>
 /// Represents a command to delete an existing comment.
 /// </summary>
-public record CommentDeleteByIdCommend : ICommand<bool>
+public record CommentDeleteByIdCommand : ICommand<bool>
 {
     /// <summary>
     /// The unique identifier of the comment to be deleted
