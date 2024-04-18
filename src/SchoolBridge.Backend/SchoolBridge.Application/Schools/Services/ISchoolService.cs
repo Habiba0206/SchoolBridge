@@ -6,34 +6,34 @@ using System.Linq.Expressions;
 namespace SchoolBridge.Application.Schools.Services;
 
 /// <summary>
-/// Interface for managing comment entities.
+/// Interface for managing school entities.
 /// </summary>
 public interface ISchoolService
 {
     /// <summary>
-    /// Retrieves comments based on optional filtering conditions and tracking prefrences.
+    /// Retrieves schools based on optional filtering conditions and tracking prefrences.
     /// </summary>
     /// <param name="predicate"></param>
     /// <param name="queryOptions"></param>
     /// <returns></returns>
-    IQueryable<Comment> Get(
-         Expression<Func<Comment, bool>>? predicate = default,
+    IQueryable<School> Get(
+         Expression<Func<School, bool>>? predicate = default,
          QueryOptions queryOptions = default);
 
     /// <summary>
-    /// Asynchronously retrieves a comment by its id, optionally applying caching.
+    /// Asynchronously retrieves a school by its id, optionally applying caching.
     /// </summary>
     /// <param name="id"></param>
     /// <param name="queryOptions"></param>
     /// <param name="cancellationToken"></param>
     /// <returns></returns>
-    ValueTask<Comment?> GetByIdAsync(
+    ValueTask<School?> GetByIdAsync(
         Guid id,
         QueryOptions queryOptions = default,
         CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Checks if comment exists.
+    /// Checks if school exists.
     /// </summary>
     /// <param name="id"></param>
     /// <param name="cancellationToken"></param>
@@ -43,61 +43,61 @@ public interface ISchoolService
         CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Asynchronously retrieves comments by collection of ids.
+    /// Asynchronously retrieves schools by collection of ids.
     /// </summary>
     /// <param name="ids"></param>
     /// <param name="queryOptions"></param>
     /// <param name="cancellationToken"></param>
     /// <returns></returns>
-    ValueTask<IList<Comment>> GetByIdsAsync(
+    ValueTask<IList<School>> GetByIdsAsync(
         IEnumerable<Guid> ids,
         QueryOptions queryOptions = default,
         CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Asynchronously creates a new comment entity.
+    /// Asynchronously creates a new school entity.
     /// </summary>
-    /// <param name="comment"></param>
+    /// <param name="school"></param>
     /// <param name="commandOptions"></param>
     /// <param name="cancellationToken"></param>
     /// <returns></returns>
-    ValueTask<Comment> CreateAsync(
-        Comment comment,
+    ValueTask<School> CreateAsync(
+        School school,
         CommandOptions commandOptions = default,
         CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Asynchronously updates a comment entity.
+    /// Asynchronously updates a school entity.
     /// </summary>
-    /// <param name="comment"></param>
+    /// <param name="school"></param>
     /// <param name="commandOptions"></param>
     /// <param name="cancellationToken"></param>
     /// <returns></returns>
-    ValueTask<Comment> UpdateAsync(
-        Comment comment,
+    ValueTask<School> UpdateAsync(
+        School school,
         CommandOptions commandOptions,
         CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Asynchronously deletes a comment entity.
+    /// Asynchronously deletes a school entity.
     /// </summary>
-    /// <param name="comment"></param>
+    /// <param name="school"></param>
     /// <param name="commandOptions"></param>
     /// <param name="cancellationToken"></param>
     /// <returns></returns>
-    ValueTask<Comment?> DeleteAsync(
-        Comment comment,
+    ValueTask<School?> DeleteAsync(
+        School school,
         CommandOptions commandOptions,
         CancellationToken cancellationToken = default);
 
     /// <summary>
-    /// Asynchronously deletes an existing comment entity by its id.
+    /// Asynchronously deletes an existing school entity by its id.
     /// </summary>
     /// <param name="id"></param>
     /// <param name="commandOptions"></param>
     /// <param name="cancellationToken"></param>
     /// <returns></returns>
-    ValueTask<Comment?> DeleteByIdAsync(
+    ValueTask<School?> DeleteByIdAsync(
         Guid id,
         CommandOptions commandOptions,
         CancellationToken cancellationToken = default);

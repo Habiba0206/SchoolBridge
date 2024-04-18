@@ -25,6 +25,6 @@ public class SchoolFilter : FilterPagination
     /// <param name="obj"></param>
     /// <returns></returns>
     public override bool Equals(object? obj) =>
-        obj is StudentFilter schoolFilter
+        obj is SchoolFilter schoolFilter
         && schoolFilter.GetHashCode() == GetHashCode();
 }

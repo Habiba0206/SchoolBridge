@@ -1,6 +1,6 @@
 ﻿using SchoolBridge.Domain.Common.Commands;
 
-namespace SchoolBridge.Application.Schools.Commands;
+namespace SchoolBridge.Application.Students.Commands;
 
 /// <summary>
 /// Represents a command to delete an existing student.

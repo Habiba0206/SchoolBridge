@@ -6,10 +6,10 @@ namespace SchoolBridge.Application.Schools.Commands;
 /// <summary>
 /// Represents a command to modify an existing school.
 /// </summary>
-public class SchoolUpdateCommand : ICommand<StudentDto>
+public class SchoolUpdateCommand : ICommand<SchoolDto>
 {
     /// <summary>
     /// The data required to update an existing school.
     /// </summary>
-    public StudentDto SchoolDto { get; set; }
+    public SchoolDto SchoolDto { get; set; }
 }

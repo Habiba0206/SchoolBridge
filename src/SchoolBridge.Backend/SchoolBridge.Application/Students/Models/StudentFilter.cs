@@ -1,7 +1,7 @@
 ﻿using SchoolBridge.Application.Comments.Models;
 using SchoolBridge.Domain.Common.Queries;
 
-namespace SchoolBridge.Application.Schools.Models;
+namespace SchoolBridge.Application.Students.Models;
 
 public class StudentFilter : FilterPagination
 {

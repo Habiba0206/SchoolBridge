@@ -1,6 +1,6 @@
 ﻿using SchoolBridge.Domain.Enums;
 
-namespace SchoolBridge.Application.Schools.Models;
+namespace SchoolBridge.Application.Students.Models;
 
 /// <summary>
 /// Represents a data transfer object (DTO) for a student.

@@ -1,7 +1,7 @@
-﻿using SchoolBridge.Application.Schools.Models;
+﻿using SchoolBridge.Application.Students.Models;
 using SchoolBridge.Domain.Common.Commands;
 
-namespace SchoolBridge.Application.Schools.Commands;
+namespace SchoolBridge.Application.Students.Commands;
 
 /// <summary>
 /// Represents a command to create a new student.
